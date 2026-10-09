@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            height: 100px;
+            background-image: url("https://cdn.sanity.io/images/9uwkxuld/production/255cfec31bbbe3b01f9dfffe7a02299fab7cef8f-800x300.png?h=1000&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(247, 247, 247);
+        }
+
+        nav {
+            display: flex;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        nav a {
+            flex: 1;
+            text-align: center;
+            padding: 10px 5px;
+            border-right: 1px solid black;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        nav a:last-child {
+            border-right: none;
+        }
+
+        main {
+            height: 750px;
+            display: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer {
+            height: 50px;
+            border-top: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Desarrollo de Aplicaciones Web</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contenidoHTML.html">Modificar contenido HTML</a>
+        <a href="estilosCSS.html">Modificar estilos CSS</a>
+        <a href="atributosHTML.html">Modificar atributos HTML</a>
+    </nav>
+
+    <main>
+        <h2>Modificar estilos CSS</h2>
+
+    <p id="demo">En este curso aprenderemos a cambiar los estilos CSS con JavaScript.</p>
+
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
+        Cambiar tamaño
+    </button>
+    </main>
+
+    <footer>
+        <p>Footer del sitio</p>
+    </footer>
+
+</body>
+</html>
